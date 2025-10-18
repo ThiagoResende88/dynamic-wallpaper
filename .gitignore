@@ -1,0 +1,12 @@
+# Gemini files
+gemini.md
+git_commit_guide.txt
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
