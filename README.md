@@ -4,14 +4,6 @@
   <img src="https://raw.githubusercontent.com/adi1090x/files/master/dynamic-wallpaper/logo.png">
 </p>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Mantido%3F-Sim-green?style=for-the-badge">
-  <img src="https://img.shields.io/github/license/adi1090x/dynamic-wallpaper?style=for-the-badge">
-  <img src="https://img.shields.io/github/stars/ThiagoResende88/dynamic-wallpaper?style=for-the-badge">
-  <img src="https://img.shields.io/github/issues/ThiagoResende88/dynamic-wallpaper?color=violet&style=for-the-badge">
-  <img src="https://img.shields.io/github/forks/ThiagoResende88/dynamic-wallpaper?color=teal&style=for-the-badge">
-</p>
-
 <p align="center">Um script <code>python</code> simples para definir papéis de parede de acordo com a hora atual, usando o <b>agendador de tarefas cron</b>. <br> Fork adaptado para funcionar nativamente no <b>Pop!_OS</b>.</p>
 
 ![gif](https://raw.githubusercontent.com/adi1090x/files/master/dynamic-wallpaper/main.gif) <br />
