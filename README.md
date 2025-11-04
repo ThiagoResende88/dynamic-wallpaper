@@ -70,6 +70,32 @@ Para fazer a troca de papel de parede automaticamente a cada hora, você precisa
 
 3.  Salve e saia do editor. Seu papel de parede agora mudará automaticamente a cada hora.
 
+### Automação na Inicialização (Autostart)
+
+O `cron` funciona muito bem, mas tem uma limitação: ele não executa tarefas que foram perdidas enquanto o computador estava desligado. Isso significa que se você ligar o computador, o papel de parede não será atualizado para o horário correto até a próxima hora cheia.
+
+Para resolver isso, podemos configurar o script para ser executado toda vez que o sistema é iniciado.
+
+#### Configuração
+
+Para facilitar, um script de configuração foi adicionado ao projeto. Para usá-lo, basta executar os seguintes comandos no seu terminal, a partir da pasta do projeto:
+
+```bash
+chmod +x setup_autostart.sh
+./setup_autostart.sh
+```
+
+Isso criará um arquivo de configuração em `~/.config/autostart/` que fará com que o `dynamic_wallpaper.py` seja executado automaticamente toda vez que você fizer login.
+
+#### Como Funciona em Conjunto com o Cron
+
+Usar o autostart e o cron juntos oferece a melhor experiência:
+
+-   **Autostart**: Garante que o papel de parede correto seja definido assim que você liga o computador e faz login.
+-   **Cron**: Continua atualizando o papel de parede a cada hora, garantindo que ele permaneça em sincronia com o tempo ao longo do dia.
+
+Portanto, é recomendado usar **ambas** as formas de automação.
+
 ### Como configurar um atalho (alias)
 
 Para evitar ter que digitar o comando completo toda vez, você pode criar um atalho chamado `dwall`.
